@@ -17,39 +17,63 @@ html{
     height: 46px;
     background-color: black;
 }
+/* ----------------------------------- */
 
-#nav li{
+#nav, .sub-nav{
+    list-style-type: none;
+}
+#nav > li{
+    display: inline-block;
+    position: relative;
+}
+
+#nav > li > a{
+    text-decoration: none;
+    color: white;
+    padding: 0 24px;
+    line-height: 46px;
+    /* display: inline-block; */
+}
+
+#nav > li:hover > a{
+    background-color: white;
+    color: black;
     display: inline-block;
 }
 
-/* #nav li:hover{
-    
-    background-color: white;
+#nav > li:hover .sub-nav{
+    display: block;
 }
-
-#nav li a:hover{
-    color:black;
-} */
-
-#nav li:hover a{
-    display: inline-block;
-    color:black;
-    background-color: white;
-}
-
+/* ----------------------------------- */
 #nav .sub-nav{
     display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    min-width: 160px;
+    top: 100%;
 }
 
-#nav li a{
-    color: white;
+#nav .sub-nav li{
+    /* display: block; */
+    /* Mac dinh list hien thi theo chieu doc */
+}
+
+#nav .sub-nav li a{
     text-decoration: none;
-    line-height: 46px;
-    padding: 0 24px;
-
+    color: black;
+    padding: 0 16px;
+    line-height: 38px;
 }
-#slider{
 
+#nav .sub-nav li:hover a{
+    background-color: #ccc;
+    display: block;
+}
+
+#slider{
+    min-height: 500px;
+    /* background-color: #333; */
 }
 #content{
 
