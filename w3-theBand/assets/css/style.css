@@ -21,6 +21,7 @@ html{
     right: 0;
     /* width: 100%; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 /* ----------------------------------- */
 
@@ -116,19 +117,52 @@ html{
 #slider .text-content{
     color: white;
     position: absolute;
-    bottom: 0;
-    
+    bottom: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
 #slider .text-heading{
-
+    font-size: 69px;
 }
 #slider .text-description{
-
+    font-size: 23px;
+    margin-top: 25px;
 }
 /* ---------------------------------------- */
 #content{
     min-height: 1000px;
     background-color: #ccc;
+}
+
+#content .content-section{
+    padding: 64px 0;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+#content .section-subheading{
+    font-size: 15px;
+    margin-top: 25px;
+    /* padding-top: 25px; */
+    text-align: center;
+    color: rgba(0, 0, 0, 0.602);
+    font-style: italic;
+}
+
+
+#content .about-text{
+    text-align: justify;
+    margin-top: 25px;
+    line-height: 1.4;
+    /* Tieng viet de tam 1.6 */
 }
 #footer{
 
