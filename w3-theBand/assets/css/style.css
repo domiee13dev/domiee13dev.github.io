@@ -99,6 +99,7 @@ html{
     font-size: 20px;
     line-height: 46px;
 }
+/* ------------------------------------- */
 #slider{
     margin-top: 46px;
     /* width: 100%; khong can vi div display =block*/ 
@@ -109,7 +110,22 @@ html{
     background-size: cover;
     background-repeat: no-repeat; */
     background: url('../img/banner.png') top center / cover no-repeat;
+    position: relative;
 }
+
+#slider .text-content{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    
+}
+#slider .text-heading{
+
+}
+#slider .text-description{
+
+}
+/* ---------------------------------------- */
 #content{
     min-height: 1000px;
     background-color: #ccc;
