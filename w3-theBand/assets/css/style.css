@@ -9,6 +9,13 @@ html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.clear{
+    clear: both;
+}
+
+.text-white{
+    color:#fff  !important;
+}
 #main{
     
 }
@@ -23,6 +30,7 @@ html{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
+
 /* ----------------------------------- */
 
 #nav, .sub-nav{
@@ -164,6 +172,119 @@ html{
     line-height: 1.4;
     /* Tieng viet de tam 1.6 */
 }
+#content .member-list{
+    margin-top: 48px;
+    padding-bottom: 32px;
+    overflow: hidden;
+}
+#content .member-item{
+    /* display: inline-block; */
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+}
+
+#content .member-name{
+    font-size: 15px;
+}
+
+#content .member-image{
+    margin-top: 15px;
+    width: 154px;
+    /* height: 154px; Chi can dat 1 chieu*/ 
+    border-radius: 4px;
+}
+/* -------------------------------------------- */
+.tour-section{
+    background-color: black;
+}
+.ticket-list{
+    background-color: white;
+    margin-top: 40px;
+}
+.ticket-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+    list-style: none;
+}
+.ticket-list .sold-out{
+    background-color: #f44336;
+    color:#fff;
+    padding: 4px 4px;
+    margin-left: 14px;
+}
+.ticket-list .quantity{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    float: right;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: -3px;
+    /* margin top am chi dung duoc voi float */
+}
+
+/* .ticket-list li:hover{
+    background-color: #ccc;
+} */
+
+/* ----------------------------------------------- */
+/* Places */
+.place-list{
+    margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 48px;
+}
+.place-item{
+    float: left;
+    width: calc(100%/3);
+    padding: 0 8px;
+    background-color: white;
+    font-size: 15px;
+    background-clip: content-box;
+}
+.place-img{
+    width: 100%;
+    display: block;
+   
+}
+
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-body{
+    padding: 16px;
+}
+.place-heading{
+    font-size: 15px;
+    font-weight: 600;
+}
+.place-time{
+    margin-top: 15px;
+    color: #757575;
+}
+.place-desc{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+.buy-btn{
+    color: #fff;
+    background-color: black;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.buy-btn:hover{
+    background-color: #ccc;
+    color: black;
+}
+/* Footer section */
 #footer{
 
 }
