@@ -85,8 +85,8 @@
                 </ul>
 
                 <!-- Places list -->
-                <div class="place-list">
-                  <div class="place-item">
+                <div class="place-list row">
+                  <div class="place-item col">
                     <img src="./assets/img/places/newyork.jpg" alt="New York" class="place-img">
                     <div class="place-body">
                       <h3 class="place-heading">New York</h3>
@@ -96,7 +96,7 @@
                     </div>
                   </div>
                   
-                  <div class="place-item">
+                  <div class="place-item col">
                     <img src="./assets/img/places/paris.jpg" alt="New York" class="place-img">
                     <div class="place-body">
                       <h3 class="place-heading">New York</h3>
@@ -106,7 +106,7 @@
                     </div>
                   </div>
 
-                  <div class="place-item">
+                  <div class="place-item col">
                     <img src="./assets/img/places/sanfran.jpg" alt="New York" class="place-img">
                     <div class="place-body">
                       <h3 class="place-heading">New York</h3>
@@ -123,14 +123,40 @@
 					<div class="content-section">
 							<h2 class="section-heading">CONTACT</h2>
 							<p class="section-subheading">Fan? Drop a note!</p>
-							<p class="about-text">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam quam nulla porttitor massa. Pharetra massa massa ultricies mi quis hendrerit dolor magna eget. Est ultricies integer quis auctor elit sed vulputate. Risus pretium quam vulputate dignissim. Integer vitae justo eget magna fermentum iaculis eu. Sit amet nisl suscipit adipiscing bibendum est ultricies integer. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Tristique nulla aliquet enim tortor at auctor urna nunc. Eu lobortis elementum nibh tellus molestie nunc. Porttitor lacus luctus accumsan tortor posuere.
-							</p>
+							<div class="row contact-content">
+								<div class="col col-half contact-info">
+									<p><i class="ti-location-pin"></i>Chicago, US</p>
+									<p><i class="ti-mobile"></i>Phone: +00 151515</p>
+									<p><i class="ti-email"></i>Email: mail@mail.com</p>
+								</div>
+								<div class="col col-half contact-form">
+									<form action="">
+										<div class="row">
+											<div class="col col-half">
+												<input type="text" required class="form-control" placeholder="Name">
+											</div>
+											<div class="col col-half">
+												<input type="email" required class="form-control" placeholder="Email">
+											</div>
+											<div class="clear"></div>
+										</div>
+										<div class="row mt-8">
+											<div class="col col-full">
+												<input type="text" required placeholder="Message" class="form-control">
+											</div>
+											<div class="clear"></div>
+										</div>
+										<input type="submit" value="SEND" class="mt-16 form-btn">
+									</form>
+								</div>
+							</div>
 					</div>
-					
+					<div class="clear"></div>
 					
 			</div>
-
+			<div id="map">
+				<div class="map-img"></div>
+			</div>
 			<div id="footer">
 					
 			</div>

@@ -8,13 +8,36 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* common */
 .clear{
     clear: both;
 }
 
 .text-white{
     color:#fff  !important;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col{
+    float:left;
+    padding: 0 8px;
+}
+
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px !important;
 }
 #main{
     
@@ -140,7 +163,7 @@ html{
 /* ---------------------------------------- */
 #content{
     min-height: 1000px;
-    background-color: #ccc;
+    background-color: rgb(255, 255, 255);
 }
 
 #content .content-section{
@@ -283,6 +306,51 @@ html{
 .buy-btn:hover{
     background-color: #ccc;
     color: black;
+}
+/* Contact form */
+.contact-content{
+    margin-top: 48px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height:1.4 ;
+}
+.contact-info i{
+    width: 30px;
+    display: inline-block;
+}
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    /* outline: none; */
+    -moz-outline-radius: 10%;
+}
+
+.contact-form .form-btn{
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    /* border: 1px solid #000; */
+    border:none;
+    /* width: 72px;
+    height: 38px; */
+    padding: 10px 15px;
+    float: right;
+    cursor: pointer;
+}
+.contact-form .form-btn:hover{
+    background-color: #ccc;
+    color: black;
+}
+/* Map */
+.map-img{
+    width: 100%;
+    background-image: url('../img/map.jpg');
 }
 /* Footer section */
 #footer{
