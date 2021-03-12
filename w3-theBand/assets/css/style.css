@@ -310,6 +310,7 @@ html{
 /* Contact form */
 .contact-content{
     margin-top: 48px;
+    margin-bottom: 48px;
 }
 .contact-info{
     font-size: 18px;
@@ -348,11 +349,29 @@ html{
     color: black;
 }
 /* Map */
-.map-img{
+.map-section img{
     width: 100%;
-    background-image: url('../img/map.jpg');
+    
 }
 /* Footer section */
 #footer{
+    padding: 64px 16px;
+    text-align: center;
+    color: #555;
+}
 
+#footer .social-list{
+    font-size: 24px;
+}
+#footer .social-list a{
+    text-decoration: none;
+    color: #555;
+}
+
+#footer .social-list a:hover{
+    opacity: 0.6;
+}
+
+#footer .copyright{
+    margin-top: 15px;
 }
