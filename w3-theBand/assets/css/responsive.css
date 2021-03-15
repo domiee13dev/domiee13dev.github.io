@@ -1,0 +1,25 @@
+@media (max-width: 739px){
+  #nav {
+    /* width: 100%; */
+    display: block;
+  }
+  #nav > #first{
+    display: inline-block;
+    /* width: 80%; */
+  }
+  #nav > li {
+    display: block;
+    background-color: #000;    
+  }
+  /* #nav > li > a{
+    display: block;
+  } */
+  #header .search-btn{
+    display: none;
+  }
+  #header .mobile-menu-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

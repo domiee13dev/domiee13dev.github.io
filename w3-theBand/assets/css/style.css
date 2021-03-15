@@ -52,6 +52,7 @@ html{
     /* width: 100%; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     z-index: 1;
+    overflow: hidden;
 }
 
 /* ----------------------------------- */
@@ -61,6 +62,7 @@ html{
 }
 #nav{
     display: inline-block;
+    /* position: relative; */
 }
 #nav > li{
     display: inline-block;
@@ -79,7 +81,8 @@ html{
 #nav > li:hover > a{
     background-color: white;
     color: black;
-    display: inline-block;
+    /* display: inline-block; */
+    display: block;
 }
 
 #nav > li:hover .sub-nav{
@@ -115,21 +118,30 @@ html{
 #nav .nav-arrow-down{
     font-size: 12px;
 }
+
 /* ----------------------------------- */
+
+#header .mobile-menu-btn,
 #header .search-btn{
     float: right;
     padding: 0 21px;
     cursor: pointer;
+    
 }
-
 #header .search-btn:hover{
     background-color: red;
 }
-
+#header .menu-icon,
 #header .search-icon{
     color: #fff;
     font-size: 20px;
     line-height: 46px;
+}
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+}
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
 }
 /* ------------------------------------- */
 #slider{
@@ -169,8 +181,12 @@ html{
 #content .content-section{
     padding: 64px 0;
     width: 800px;
+    /* Tablet reponsive */
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 #content .section-heading{
     font-size: 30px;
@@ -375,3 +391,4 @@ html{
 #footer .copyright{
     margin-top: 15px;
 }
+
