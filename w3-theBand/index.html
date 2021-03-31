@@ -200,9 +200,18 @@
 		console.log(menuItems); 
 		for(var i=0;i<menuItems.length;i++){
 			var menuItem = menuItems[i];
-			menuItem.onclick = function(){
+			// var isParrentMenu = menuItem.nextElementSibling && menuItem.nextElementSibling.classList.contains('sub-nav');
+			//De nhu nay khi click se dung gia tri cuoi cua isParent
+			menuItem.onclick = function(event){
+				// var isParentMenu = menuItem.nextElementSibling && menuItem.nextElementSibling.classList.contains('sub-nav');
+				var isParentMenu = this.nextElementSibling && menuItem.nextElementSibling.classList.contains('sub-nav');
 				// console.log(menuItem);
-				header.style.height='46px';
+				if(!isParentMenu){
+					header.style.height='46px';
+				}else{
+					event.preventDefault();
+				}
+				// console.log(isParentMenu);
 				// header.style.height=null;
 			}
 		}

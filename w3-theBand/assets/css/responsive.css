@@ -9,11 +9,33 @@
     display:none;
   }
 }
+
+/* Mobile responsive */
 @media (max-width: 739px){
+  #header{
+    overflow: hidden;
+  }
   #nav {
     /* width: 100%; */
     display: block;
   }
+  #nav > li > a{
+    padding: 1px 24px;
+  }
+  #nav .sub-nav{
+    position: initial;
+    background-color: #000;
+  }
+  #nav .sub-nav a{
+    
+  }
+  #nav .sub-nav li a{
+    color: white;
+    padding: 5px 36px;
+    /* Luc dau chua de display:block nen xay ra loi */
+    display: block;
+  }
+  
   #nav > li:first-child{
     display: inline-block;
     /* width: 80%; */
@@ -22,9 +44,9 @@
     display: block;
     background-color: #000;    
   }
-  /* #nav > li > a{
-    display: block;
-  } */
+  #nav > li > a{
+    display: inline-block;
+  }
   #header .search-btn{
     display: none;
   }

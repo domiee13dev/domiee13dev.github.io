@@ -52,7 +52,7 @@ html{
     /* width: 100%; */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     z-index: 1;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* ----------------------------------- */
@@ -85,8 +85,10 @@ html{
     display: block;
 }
 
+/* Hien thi khi di chuot vao sub menu */
 #nav > li:hover > .sub-nav{
     display: block;
+    
 }
 /* ----------------------------------- */
 #nav .sub-nav{
@@ -106,7 +108,7 @@ html{
 #nav .sub-nav li a{
     text-decoration: none;
     color: black;
-    padding: 0 16px;
+    padding: 0px 16px;
     line-height: 38px;
 }
 
