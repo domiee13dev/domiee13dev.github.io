@@ -1,9 +1,20 @@
+@media (min-width: 1024px){
+  #header .mobile-menu-btn{
+    display:none;
+  }
+}
+/* Tablet >=740 && <1024 */
+@media (min-width: 740px) and (max-width:1024px){
+  #header .mobile-menu-btn{
+    display:none;
+  }
+}
 @media (max-width: 739px){
   #nav {
     /* width: 100%; */
     display: block;
   }
-  #nav > #first{
+  #nav > li:first-child{
     display: inline-block;
     /* width: 80%; */
   }
