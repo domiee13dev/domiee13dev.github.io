@@ -22,7 +22,7 @@
 				<li><a href="#tour">Tour</a></li>
 				<li><a href="#contact">Contact</a></li>
 				<li>
-					<a href="">
+					<a href="#">
 							More
 							<i class="nav-arrow-down ti-angle-down"></i>
 					</a>
@@ -192,6 +192,16 @@
 				header.style.height='auto';
 			}
 			else{
+				header.style.height='46px';
+			}
+		}
+		//Tự động đóng khi chọn menu item
+		var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+		console.log(menuItems); 
+		for(var i=0;i<menuItems.length;i++){
+			var menuItem = menuItems[i];
+			menuItem.onclick = function(){
+				// console.log(menuItem);
 				header.style.height='46px';
 			}
 		}
