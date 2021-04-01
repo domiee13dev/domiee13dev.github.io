@@ -3,6 +3,35 @@
     display:none;
   }
 }
+
+/* Table and mobile */
+@media (max-width: 1023px){
+  /* .s-mt-8{
+    margin-top: 8px;
+  } */
+  .btn{
+    padding: 15px 16px;
+  }
+  .contact-form .form-control{
+    padding: 15px;
+  }
+  .contact-info{
+    line-height: 2.0;
+  }
+  .social-list{
+    font-size: 48px;
+  }
+  #footer .social-list a{
+    margin: 0 8px;
+  }
+  #footer .copyright{
+    padding: 12px 0;
+    display: inline-block; 
+  }
+  #nav .sub-nav li a{
+    padding: 5px 12px;
+  }
+}
 /* Tablet >=740 && <1024 */
 @media (min-width: 740px) and (max-width:1024px){
   #header .mobile-menu-btn{
