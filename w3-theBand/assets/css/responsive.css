@@ -41,7 +41,7 @@
 
 /* Mobile responsive */
 @media (max-width: 739px){
-  .col-full,
+  .s-col-full,
   .s-full-width{
     width: 100%;
   }
