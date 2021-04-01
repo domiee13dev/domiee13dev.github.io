@@ -12,6 +12,13 @@
 
 /* Mobile responsive */
 @media (max-width: 739px){
+  .col-full,
+  .s-full-width{
+    width: 100%;
+  }
+  .s-mt-8{
+    margin-top: 8px;;
+  }
   #header{
     overflow: hidden;
   }
@@ -54,5 +61,15 @@
     position: absolute;
     right: 0;
     top: 0;
+  }
+  #content .member-item-responsive{
+    margin-top: 30px;
+    width: 100%;
+  }
+  #content .member-image{
+    width: 60%;
+  }
+  .contact-form{
+    margin-top: 8px;
   }
 }

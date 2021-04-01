@@ -188,8 +188,8 @@ html{
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 #content .section-heading{
     font-size: 30px;
@@ -277,7 +277,7 @@ html{
 /* ----------------------------------------------- */
 /* Places */
 .place-list{
-    margin-top: 32px;
+    margin-top: 16px;
     margin-left: -8px;
     margin-right: -8px;
     margin-bottom: 48px;
@@ -289,6 +289,7 @@ html{
     background-color: white;
     font-size: 15px;
     background-clip: content-box;
+    margin-top: 16px;
 }
 .place-img{
     width: 100%;
@@ -321,6 +322,7 @@ html{
     padding: 11px 16px;
     display: inline-block;
     margin-top: 15px;
+    text-align: center;
 }
 .buy-btn:hover{
     background-color: #ccc;
