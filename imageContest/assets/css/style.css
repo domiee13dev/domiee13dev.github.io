@@ -1,6 +1,10 @@
 /* body {
 	padding:10px;
 } */
+html,body{
+  margin: 0;
+  padding: 0;
+}
 article {
 	columns: 4;
   padding: 10px;
@@ -37,7 +41,12 @@ section {
   margin-top: 42px;
   
 }
-
+.about-section{
+  columns: 2;
+}
+.contact-info{
+  list-style-type: none;
+}
 /* .images:hover{
   transform: scale(1.1);
 } */
@@ -45,10 +54,16 @@ section {
   article{
     columns:1;
   }
+  .about-section{
+    columns: 1;
+  }
 }
 
 @media(min-width: 740px) and (max-width:1023px){
   article{
     columns: 2;
+  }
+  .about-section{
+    columns: 1;
   }
 }
