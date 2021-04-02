@@ -28,6 +28,10 @@ section {
 .start-cus{
   left: 200px;
 }
+.font-spec{
+  font-family: 'Satisfy', cursive;
+  font-size: 40px;
+}
 #hover-img{
   padding-top: 40px;
   margin-top: 42px;
