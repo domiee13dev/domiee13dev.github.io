@@ -21,6 +21,13 @@ section {
   min-height: 500px;
   
 }
+#about{
+  min-height: 500px;
+
+}
+.start-cus{
+  left: 200px;
+}
 #hover-img{
   padding-top: 40px;
   margin-top: 42px;
