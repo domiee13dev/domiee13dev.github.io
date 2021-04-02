@@ -16,6 +16,17 @@ section {
   font-family: 'Rancho', cursive;
   font-size: 28px;
 }
+#cover{
+  background: url("../img/slider2.jpg") top center / cover no-repeat;
+  min-height: 500px;
+  
+}
+#hover-img{
+  padding-top: 40px;
+  margin-top: 32px;
+  
+}
+
 /* .images:hover{
   transform: scale(1.1);
 } */
