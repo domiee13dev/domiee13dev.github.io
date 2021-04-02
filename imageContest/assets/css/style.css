@@ -1,0 +1,28 @@
+/* body {
+	padding:10px;
+} */
+article {
+	columns: 4;
+  padding: 10px;
+}
+section {
+	margin-bottom: 15px;
+}
+.images img{
+ 	width:  100%; 
+ 	/* box-shadow: 0px 0px 5px 0px #5a5a5a; */
+}	
+/* .images:hover{
+  transform: scale(1.1);
+} */
+@media(max-width: 739px){
+  article{
+    columns:1;
+  }
+}
+
+@media(min-width: 740px) and (max-width:1023px){
+  article{
+    columns: 2;
+  }
+}
