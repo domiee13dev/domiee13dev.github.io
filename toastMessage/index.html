@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <div id="toast">
+      <!-- Success  -->
+      <!-- <div class="toast toast--success">
+        <div class="toast__icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="toast__body">
+          <div class="toast__title">Success</div>
+          <div class="toast__msg">Anyone with access can view your invited visitors.</div>
+        </div>
+        <div class="toast__close">
+          <i class="fas fa-times"></i>
+        </div>
+      </div> -->
+    </div>
+    <div>
+      <div onclick=showSuccessToast() class="btn btn--success">Show success toast</div>
+      <div onclick=showErrorToast() class="btn btn--danger">Show error toast</div>
+    </div>
+    <!-- Info  -->
+    <!-- <div class="toast toast--info">
+      <div class="toast__icon">
+        <i class="fas fa-check-circle"></i>
+      </div>
+      <div class="toast__body">
+        <div class="toast__title">Success</div>
+        <div class="toast__msg">Anyone with access can view your invited visitors.</div>
+      </div>
+      <div class="toast__close">
+        <i class="fas fa-times"></i>
+      </div>
+    </div> -->
+    <!-- Warning  -->
+    <!-- <div class="toast toast--warning">
+      <div class="toast__icon">
+        <i class="fas fa-check-circle"></i>
+      </div>
+      <div class="toast__body">
+        <div class="toast__title">Success</div>
+        <div class="toast__msg">Anyone with access can view your invited visitors.</div>
+      </div>
+      <div class="toast__close">
+        <i class="fas fa-times"></i>
+      </div>
+    </div> -->
+    <!-- Error  -->
+    <!-- <div class="toast toast--error">
+      <div class="toast__icon">
+        <i class="fas fa-check-circle"></i>
+      </div>
+      <div class="toast__body">
+        <div class="toast__title">Success</div>
+        <div class="toast__msg">Anyone with access can view your invited visitors.</div>
+      </div>
+      <div class="toast__close">
+        <i class="fas fa-times"></i>
+      </div>
+    </div> -->
+  </div>
+  <script>
+    // Toast function 
+    function toast({title='', message='', 
+    type='info', duration=3000}){
+      const main = document.getElementById('toast');
+      const icons = {
+        success: 'fas fa-check-circle',
+        info: 'fas fa-info-circle',
+        warning: 'fas fa-exclamation-circle',
+        error: 'fas fa-exclamation-circle'
+      };
+      const icon= icons[type];
+      const delay = (duration/1000).toFixed(2);
+      if(main){
+        const toast = document.createElement('div');
+        
+        //Auto remove
+        const autoRemoveId = setInterval(function(){
+          main.removeChild(toast);
+        }, duration+1000);
+
+
+        toast.onclick = function(e){
+          console.log(e.target.classList);
+          // if(e.target.closets('.toast__close')){
+          if(e.target.classList.value == 'toast__close' ||e.target.classList.value == 'fas fa-times' ){
+            main.removeChild(toast);
+            clear(autoRemoveId);
+          }
+        }
+        toast.classList.add('toast', `toast--${type}`);
+        toast.style.animation = `slideInLeft ease .3s, fadeOut linear 1s ${delay}s forwards`;
+        toast.innerHTML = `
+          <div class="toast__icon">
+            <i class="${icon}"></i>
+          </div>
+          <div class="toast__body">
+            <div class="toast__title">${title}</div>
+            <div class="toast__msg">${message}</div>
+          </div>
+          <div class="toast__close">
+            <i class="fas fa-times"></i>
+          </div>
+        `;
+        main.appendChild(toast);
+        // setInterval(function(){
+        //   main.removeChild(toast);
+        // }, duration+1000);
+      }
+    }
+    // toast({
+    //   title: "Success",
+    //   message: "Anyone with access can view your invited visitors.",
+    //   type: "success",
+    //   duration: 3000
+    // });
+
+    function showSuccessToast(){
+      toast({
+        title: "Success",
+        message: "Anyone with access can view your invited visitors.",
+        type: "success",
+        duration: 5000
+      });
+    }
+    function showErrorToast(){
+      toast({
+        title: "Error",
+        message: "Anyone with access can view your invited visitors.",
+        type: "error",
+        duration: 3000
+      });
+    }
+  </script>
+</body>
+</html>
