@@ -1,6 +1,7 @@
 :root{
   --white-color: #fff;
   --text-color: #333;
+  --border-color: #dbdbdb;
 }
 
 *{
@@ -30,6 +31,68 @@ html{
   flex-wrap: wrap;
 }
 
+/* Modal  */
+
+/* Modal  */
+.modal{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.modal__overlay{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.534);
+}
+
+.modal__body{
+  /* background-color: white; */
+  /* border-radius: 5px; */
+  margin: auto;
+  z-index: 3;
+}
+
+
+.btn{
+  min-width: 142px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  padding: 0 12px;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn.btn--primary{
+  background-color: #ce5a33;
+  color: white;
+}
+
+.btn.btn--size-s{
+  height: 32px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 32px;
+  padding: 0 8px;
+}
+
+.btn.btn--normal:hover{
+  background-color: rgba(0, 0, 0,0.05);
+}
+
+.auth-form__social-icon{
+  font-size: 1.8rem;
+}
 
 /* Animation  */
 @keyframes fadeIn{
