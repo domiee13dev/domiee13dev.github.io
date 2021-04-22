@@ -1,0 +1,94 @@
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+}
+.main{
+  display: flex;
+  height: 100%;
+}
+.navbar{
+  width: 86px;
+  background-color: var(--secondary-color);
+  height: 100%;
+}
+
+.navbar__container{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar__item{
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--primary-color);
+  height: 77px;
+}
+
+.navbar__item:hover 
+.navbar__item-icon{
+  color: var(--hov-color);
+}
+
+.navbar__item-link{
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.navbar__item:first-child{
+  margin-top: 16px;
+}
+
+.navbar__item-icon{
+  font-size: 28px;
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+/* Card  */
+.card{
+  width: 330px;
+  background-color: var(--third-color);
+  color: white;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.card__img{
+  width: 170px;
+  height: 170px;
+  margin-top: 62px;
+}
+
+.card__info{
+  text-align: center;
+}
+
+.card__name{
+  margin: 16px 0 8px 0;
+  font-size: 30px;
+}
+
+.card__major{
+  margin: 0;
+  font-size: 16px;
+}
+
+.card__socials{
+  margin-top: 30px;
+}
+
+.card__social-link{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px;
+}

@@ -1,0 +1,13 @@
+:root{
+  --primary-color: #0d7377;
+  --secondary-color: #212121;
+  --third-color: #3f3f3f;
+  --hov-color: #32e0c4;
+}
+*{
+  box-sizing: inherit;
+}
+
+html{
+  font-family: 'Roboto', sans-serif;
+}
