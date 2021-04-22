@@ -5,6 +5,7 @@
   --navbar-height: 31px;
   --header-height: 120px;
   --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+  --primary-color: rgb(255, 127, 53);
 }
 
 *{
