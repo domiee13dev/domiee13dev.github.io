@@ -74,12 +74,12 @@ body{
 
 .card__name{
   margin: 16px 0 8px 0;
-  font-size: 30px;
+  font-size: 48px;
 }
 
 .card__major{
   margin: 0;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .card__socials{
@@ -91,4 +91,22 @@ body{
   text-decoration: none;
   font-size: 20px;
   margin: 10px;
+}
+
+.card__download-btn{
+  border-radius: 50px;
+  border: 1px solid white;
+  margin: 48px;
+  min-width: 168px;
+  height: 46px;
+  font-weight: 300;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: var(--third-color);
+  color: white;
+}
+
+.card__download-btn:hover{
+  background-color: white;
+  color: var(--primary-color);
 }
