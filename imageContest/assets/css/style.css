@@ -1,13 +1,19 @@
 /* body {
 	padding:10px;
 } */
+/* *{
+  box-sizing: inherit;
+}
+html{
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+} */
 body{
+  width: 100%;
   margin: 0;
   margin-left: 10px;
   padding: 0;
-}
-body{
-  width: 100%;
 }
 article {
 	columns: 4;
@@ -15,6 +21,7 @@ article {
 }
 section {
 	margin-bottom: 15px;
+  /* margin-right: ; */
 }
 .images img{
  	width:  100%; 
@@ -72,3 +79,11 @@ section {
     columns: 1;
   }
 }
+/* 
+.modal{
+  z-index: 1000;
+}
+
+#exampleModal{
+  z-index: 100 !important;
+} */
