@@ -1,3 +1,3 @@
-<? php 
-  echo "Hello mtf";
+<?php
+  echo $_GET['name'];
 ?>
