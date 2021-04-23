@@ -13,6 +13,81 @@
   list-style: none;
   padding-left: 0;
   margin: 4px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+.header__navbar-user{
+  display: flex;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.header__navbar-user-avt{
+  width: 22px;
+  border-radius: 50%;
+  margin-right: 4px;
+  border: 1px solid rgba(0,0,0,0.1);
+  ;
+}
+
+.header__navbar-user-menu{
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  right: 0;
+  list-style: none;
+  border-radius: 2px;
+  background-color: white;
+  /* padding: 8px 0; */
+  padding-left: 0;
+  width: 160px;
+  box-shadow: 0 0 5px #ccc;
+  display: none;
+
+}
+
+.header__navbar-user:hover
+.header__navbar-user-menu{
+  display: block;
+}
+
+.header__navbar-user-item{
+  font-weight: 300;
+}
+
+.header__navbar-user-item:first-child{
+  margin-top: 8px;
+}
+
+.header__navbar-user-item:last-child{
+  border-bottom-right-radius:2px ;
+  border-bottom-left-radius:2px ;
+}
+
+.header__navbar-user-item a{
+  color: black;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 8px 16px;
+  display: block;
+
+}
+
+.header__navbar-user-menu::after{
+  content: "";
+  border-style: solid;
+  border-width: 20px 30px;
+  border-color: transparent transparent white transparent;
+  position: absolute;
+  right: 8px;
+  top: -26px;
+}
+
+
+.header__navbar-user-item a:hover{
+  background-color: #FAFAFA;
 }
 
 .header__navbar-item + .header__navbar-item{
@@ -69,7 +144,8 @@
 
 .header__navbar-item,
 .header__navbar-icon-link{
-  display: inline-flex;
+  /* display: inline-flex; */
+  display: flex;
   align-items: center;
 }
 
@@ -351,6 +427,8 @@
   border-right: 1px solid black;
   padding-right: 12px;
 } */
+
+
 
 .auth-form__help-separate{
   display: block;
