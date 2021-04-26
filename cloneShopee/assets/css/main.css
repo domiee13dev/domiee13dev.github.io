@@ -969,3 +969,161 @@
 .home-filter__page-icon {
   color: #ccc;
 }
+
+/* item  */
+.home-product{
+  padding: 0;
+  margin: 0;
+}
+.home-product-item{
+  margin-top: 10px;
+  background-color: white;
+  position: relative;
+  
+}
+
+.home-product-item__img{
+  padding-top: 100%;
+}
+.home-product-item__name{
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1.8rem;
+  margin: 10px 10px 6px 10px;
+  height: 36px;
+  overflow: hidden;
+  display: block;
+  /* Gioi han so dong  */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2 ;
+  /* Cach 2 dung cho 1 dong */
+  /* text-overflow: ellipsis;
+  white-space: nowrap; */
+}
+.home-product-item__price{
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+.home-product-item__price-old{
+  text-decoration: line-through;
+  font-size: 1.4rem;
+  color: #666;
+  margin-left: 10px;
+}
+.home-product-item__price-current{
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  margin-left: 10px;
+}
+.home-product-item__action{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* color: #666; */
+  margin: 6px 10px 0;
+}
+.home-product-item__like{
+  font-size: 1.2rem;
+}
+
+.home-product-item__like--liked .home-product-item__like-icon-empty{
+  display: none;
+}
+
+.home-product-item__like--liked .home-product-item__like-icon-fill{
+  display: block;
+  color: red;
+}
+
+.home-product-item__like-icon-empty{
+
+}
+
+i.home-product-item__like-icon-fill{
+  display: none;
+}
+.home-product-item__rating{
+  cursor: pointer;
+  font-size: 0.6rem;
+  color: #d5d5d5;
+  margin-left: auto;
+}
+
+.home-product-item__star--gold{
+  color: #ffce3e;
+}
+
+.home-product-item__sold{
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-left: 4px;
+}
+.home-product-item__origin{
+  display: flex;
+  justify-content: space-between;
+  margin: 3px 10px 0;
+  font-weight: 300;
+  color: #595959;
+  font-size: 1.2rem;
+}
+.home-product-item__brand{
+
+}
+.home-product-item__origin-name{
+
+}
+.home-product-item__favorite{
+  position: absolute;
+  top: 10px;
+  left: -4px;
+  background-color: rgb(233, 78, 51);
+  color: white;
+  border-top-right-radius:  3px;
+  border-bottom-right-radius: 3px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  padding-right: 4px;
+}
+
+.home-product-item__favorite:after{
+  content: "";
+  position: absolute;
+  border-top: 4px solid rgb(192, 43, 17);
+  border-left: 4px solid transparent;
+  left: 0;
+  bottom: -4px;
+}
+
+.home-product-item__favorite i {
+  font-size: 0.9rem;
+  margin: 0 2px 0 4px;
+}
+.home-product-item__saleoff{
+  padding: 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 36px;
+  background-color: rgba(255,216,64,0.95);
+  text-align: center;
+  clip-path: polygon(100% 0, 100% 100%, 50% 90%, 0 100%, 0 0);
+
+}
+.home-product-item__percent{
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  color: red;
+}
+.home-product-item__label{
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  top: -4px;
+}
