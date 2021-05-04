@@ -9,7 +9,7 @@ body{
   height: 100%;
 }
 .navbar{
-  width: 86px;
+  min-width: 86px;
   background-color: var(--secondary-color);
   height: 100%;
 }
@@ -70,7 +70,7 @@ body{
 
 /* Card  */
 .card{
-  width: 330px;
+  min-width: 420px;
   background-color: var(--third-color);
   color: white;
   font-weight: 300;
@@ -154,7 +154,7 @@ body{
   border-radius: 50px;
   width: 44px;
   height: 108px;
-  border: 2px solid rgb(4,180,224);
+  border: 2px solid #32e0c4;
   text-align: center;
 }
 
@@ -165,10 +165,162 @@ body{
 
 .control__btn:hover
 .control__icon{
-  color: rgb(4,180,224);
+  color: #32e0c4;
 }
 
 .control__icon{
   font-size: 28px;
   color: rgb(181,182,183);
+}
+
+/* Content  */
+.content{
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-star;
+  color: white;
+  padding: 60px;
+}
+
+.content__heading,
+.content__body{
+  margin: 0;
+}
+
+.content__heading{
+  font-size: 72px;
+}
+
+.content__body{
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--gray-color);
+}
+
+.content__about{
+}
+
+.about__heading{
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.about__body{
+  display: flex;
+}
+.about__desc{
+  flex: 2;
+  font-weight: 300;
+  line-height: 1.4;
+}
+.about__info{
+  list-style-type: none;
+  flex: 1;
+}
+
+.about__info-item-label{
+  color: var(--hov-color);
+  font-weight: 500;
+}
+.about__info-item-value{
+  font-weight: 300;
+}
+
+/* Hobby   */
+
+.content__hobby{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hobby-item{
+  width: 600px;
+  margin: 12px 0;
+}
+
+.hobby__icon{
+  font-size: 40px;
+  color: var(--hov-color);
+}
+
+.hobby__name{
+  font-size: 24px;
+  font-weight: 500;
+  /* color: var(--hov-color); */
+  margin: 8px 0;
+}
+
+.hobby__desc{
+  font-weight: 300;
+}
+
+/* resume  */
+.content__resume{
+ 
+}
+.resume__heading{
+  font-weight: 500;
+  font-size: 32px;
+  margin: 0 0 32px 0;
+}
+
+.resume__education{
+  flex: 1;
+}
+
+.education__heading{
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--hov-color);
+}
+
+.education__body{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.education-item{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.education__info{
+  text-align: right;
+  margin-right: 24px;
+  color: #a1a1a1;
+  flex: 1;
+}
+
+.education__year{
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+}
+.education__name{
+  font-weight: 300;
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.education__desc{
+  border-left: 1px solid #a1a1a1;
+  padding-left: 30px;
+  font-weight: 300;
+  flex: 3;
+}
+
+.education__major{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 12px;
+}
+
+.resume__coding-skill{
+  flex: 1;
 }
