@@ -41,6 +41,10 @@ section {
   min-height: 500px;
 
 }
+#login{
+  font-family: 'Rancho', cursive;
+  font-size: 56px;
+}
 .start-cus{
   left: 200px;
 }

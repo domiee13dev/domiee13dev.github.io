@@ -201,6 +201,7 @@ body{
 }
 
 .content__about{
+  margin-bottom: 56px;
 }
 
 .about__heading{
@@ -256,6 +257,7 @@ body{
 
 .hobby__desc{
   font-weight: 300;
+  line-height: 1.4;
 }
 
 /* resume  */

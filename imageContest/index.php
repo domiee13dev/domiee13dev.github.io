@@ -40,44 +40,13 @@
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Leader board</a>
             </li>
             <li class="nav-item">
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#signUpModal">
-                Register
-              </button><!-- Modal -->
+              <a href="./login.php" class="btn btn-primary mx-2">Login</a>
             </li>
             <li class="nav-item">
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-outline-success me-2" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Login
-              </button><!-- Modal -->
+            <a href="./signup.php" class="btn btn-success">Register</a>
+              
             </li>
           </ul>
-          <!-- <div class="modal fade" id="signUpModal" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <form>
-                    <div class="mb-3">
-                      <label for="recipient-name" class="col-form-label">Recipient:</label>
-                      <input type="text" class="form-control" id="recipient-name">
-                    </div>
-                    <div class="mb-3">
-                      <label for="message-text" class="col-form-label">Message:</label>
-                      <textarea class="form-control" id="message-text"></textarea>
-                    </div>
-                  </form>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Send message</button>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </nav>
@@ -85,91 +54,7 @@
   </header>
   <!-- Main  -->
   <main class="w-100">
-    <!-- Signup Modal -->
-    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <!-- <h5 class="modal-title" id="exampleModalLabel">Register</h5> -->
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div id="register" class="bg-white text-dark pt-3">
-              <h2 class="text-center mt-2 font-spec">Register</h2>
-              <p class="fst-italic text-center lead">Join the Contest & Win Amazing Prizes</p>
-              <!-- Signup form  -->
-              <div class="container">         
-                  <article class="row">
-                    <section class="col">
-                      <form action="http://localhost/test.php" method="GET">
-                        <div class="mb-3">
-                          <label for="exampleFormControlInput1" class="form-label">Full name</label>
-                          <input type="text" class="form-control" id="exampleFormControlInput1" name="name" placeholder="Your full name" required>
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleFormControlInput1" class="form-label">Email</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleFormControlInput1" class="form-label">Phone number</label>
-                          <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Your phone number" required>
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleFormControlInput1" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="exampleFormControlInput1"  required>
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleFormControlInput1" class="form-label">Confirm password</label>
-                          <input type="password" class="form-control" id="exampleFormControlInput1"  required>
-                        </div>
-                        <!-- <div class="mb-3">
-                          <label for="formFile" class="form-label">Default file input example</label>
-                          <input class="form-control" type="file" id="formFile">
-                        </div> -->
-                        <div class="d-flex flex-row-reverse">
-                          <button type="submit" class="btn btn-outline-success btn-lg ms-auto">Register</button>
-                        </div>
-                      </form>
-                    </section>
-                    
-                  </div>
-            </div>
-        
-          </div>
-          <!-- <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div> -->
-        </div>
-      </div>
-    </div>
-    
-    <!-- Login Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form action="">
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1"  required>
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleFormControlInput1"  required>
-              </div>
-              <div class="d-flex flex-row-reverse">
-                <button type="submit" class="btn btn-outline-primary ms-auto">Login</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+   
     <!-- Cover img  -->
     <div id="cover">
       <div id="hover-img">
@@ -179,7 +64,7 @@
               <h1 class="fw-light text-light">Welcome to 2021 Photo contest</h1>
               <p class="lead text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, labore molestiae sed assumenda autem aliquam cum quidem eum temporibus quo minima quia quis veritatis laboriosam eaque unde exercitationem corrupti quod.</p>
               <p>
-                <a href="#register" class="btn btn-primary my-2">Register</a>
+                <!-- <a href="#register" class="btn btn-primary my-2">Register</a> -->
                 <a href="#about" class="btn btn-success my-2">Read more</a>
               </p>
             </div>
