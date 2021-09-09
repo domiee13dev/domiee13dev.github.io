@@ -16,6 +16,7 @@ html{
 
 .grid{
   width: 1200px;
+  /* Danh cho man hinh co chieu rong < 1200px */
   max-width: 100%;
   margin: 0 auto;
 }
